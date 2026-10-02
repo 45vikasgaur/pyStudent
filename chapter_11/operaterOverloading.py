@@ -40,7 +40,6 @@ elif s == "/":
     print(f"The division of {num.n} and {num2.n} is {num / num2}")
 
 elif s == "//":
-    
     print(f"The floor division of {num.n} and {num2.n} is {num // num2}")
 elif s == "%":
     print(f"The remainder of {num.n} and {num2.n} is {num % num2}")
