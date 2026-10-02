@@ -1,20 +1,21 @@
-class Complex:
-    def __init__(self, r, i):
-        self.r = r
-        self.i = i
+class Vector:
+    def __init__(self, l):
+        self.x, self.y, self.z = l
 
-    def __add__(self, c2):
-        return Complex(self.r + c2.r, self.i + c2.i)
+    def __add__(self, v2):
+        result = Vector(self.x + v2.x, self.y + v2.y, self.z + v2.z)
+        return result
 
-    def __mul__(self, c2):
-        real_part = self.r + c2.r - self.i * c2.i
-        imag_part = self.i + c2.i + self.i * c2.r
-        return Complex(real_part, imag_part)
+    def __mul__(self, v2):
+        # Placeholder for vector multiplication (dot product)
+        result = self.x * v2.x + self.y * v2.y + self.z * v2.z
+        return result
 
     def __str__(self):
-        return f"{self.r} + {self.i}i"
+        return f"Vector({self.x}i, {self.y}j, {self.z}k)"
 
-c1 = Complex(1, 2)
-c2 = Complex(2, 3)
-print(c1 + c2)
-print(c1*c2)
+    def __len__(self):
+        return 3
+
+v1 = Vector([1, 2, 3])
+print(len(v1))
