@@ -1,0 +1,1 @@
+# venv is a tool that helps to create isolated Python environments. It allows you to manage dependencies for different projects separately, preventing conflicts between packages and versions. Each virtual environment has its own Python interpreter and libraries, which can be installed and managed independently of the system-wide Python installation.

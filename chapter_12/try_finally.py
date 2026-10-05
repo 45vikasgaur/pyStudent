@@ -7,5 +7,5 @@ def main():
         print(f"Error: {e}")
 
     finally:
-        print("I am in finally block ")
+        print("finally finished")
 main()
