@@ -14,7 +14,7 @@ def even(n):
     return False
 
 onlyEven = filter(even, l)
-point(list(onlyEven))
+print(list(onlyEven))
 
 # Reduce Example
 def sum(a, b):
